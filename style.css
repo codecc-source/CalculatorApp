@@ -1,0 +1,82 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: radial-gradient(rgba(2, 213, 255, 0.623), rgb(0, 0, 255));
+    display: flex;
+    font-family: "Copperplate", fantasy;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.instructions{
+    position: absolute;
+    top: 0;
+    left: 10;
+}
+
+.cal-bg{
+    border-radius: 16px;
+    background: rgba(135, 196, 242, 0.564);
+    border: 1px solid rgba(28, 22, 85, 0.34);
+    flex-basis: 450px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.answer{
+    background: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 16px;
+    color: black;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: auto;
+}
+
+.cal-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.cal-button{
+    background: rgba(255, 255, 255, 0.719);
+    border: 1px solid black;
+    border-radius: 16px;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 20px;
+    height: 65px;
+}
+
+.cal-button:last-child{
+    background: darkblue;
+    border: 1px solid black;
+    border-radius: 16px;
+    color: white;
+}
+
+.equal{
+    flex-basis: 46%;
+}
+
+.cal-button:hover,
+.cal-button:last-child:hover{
+    background: black;
+    color: white;
+}
